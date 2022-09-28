@@ -1,0 +1,19 @@
+.forms{
+    width: 50%;
+    margin: auto;
+    padding:50px;
+    display:grid;
+    grid-template-areas: 
+        'nom aliments'
+        'date aliments'
+        'heure btn'    
+    ;
+    gap:5px;
+}
+
+#nom{grid-area: nom;}
+#date{ grid-area: date;}
+#heure{ grid-area: heure;}
+#aliments{grid-area: aliments;}
+#btn-ajouter-repas{grid-area: btn;}
+

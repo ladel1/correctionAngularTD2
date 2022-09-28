@@ -1,0 +1,23 @@
+<div class="liste-repas">
+    <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Date</th>
+            <th>Heure</th>
+            <th>Aliments</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tbody class="tbl-accordion-header">
+          <tr *ngFor="let repas of listeRepas" >
+            <td>    {{repas.getNom()}}</td>
+            <td>    {{repas.getDate()}}</td>
+            <td>    {{repas.getTime()}}</td>
+            <td>    {{repas.getAliments()}}</td>
+            <td><button type="button" (click)="delete(repas.getID())" >Supprimer</button></td>
+          </tr>
+        </tbody>        
+    </table>    
+</div>

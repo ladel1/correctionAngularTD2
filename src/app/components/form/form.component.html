@@ -1,0 +1,21 @@
+<div class="forms">
+    <div class="form-control" id="nom">
+        <label for="nom">Nom</label>
+        <input type="text"  [(ngModel)]="nom">
+    </div>
+    <div class="form-control " id="date">
+        <label for="date">Date</label>
+        <input type="date"  [(ngModel)]="date" >
+    </div>
+    <div class="form-control" id="heure">
+        <label for="heure">Heure</label>
+        <input type="time"  [(ngModel)]="heure">
+    </div>
+    <div class="form-control" id="aliments">
+        <label for="aliments">Aliments</label>
+        <textarea  cols="30" rows="10" [(ngModel)]="aliments" ></textarea>
+    </div> 
+    <div id="btn-ajouter-repas">
+        <button type="button"  (click)="ajouterRepas()" >Ajouter</button>           
+    </div>
+</div>

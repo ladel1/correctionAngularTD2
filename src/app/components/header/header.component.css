@@ -1,0 +1,17 @@
+nav{
+    display:flex;
+    background-color: rgb(26, 64, 116);
+    justify-content: space-between;
+    color:#fff;
+}
+.logo h1{
+    padding:8px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap:15px;
+}
+.menu ul li{
+    padding: 10px 5px;
+}
